@@ -3,19 +3,19 @@
 kernel_dir="${PWD}"
 CCACHE=$(command -v ccache)
 objdir="${kernel_dir}/out"
-ANYKERNEL="/workspace/jale/AnyKernel3"
+ANYKERNEL="/workspace/tools/AnyKernel3"
 builddir="${kernel_dir}/build"
 ZIMAGE=$kernel_dir/out/arch/arm64/boot/Image
 TC_DIR="/workspace/"
 KERNEL_LOG="$KERNEL_DIR/out/log-$(TZ=Asia/Jakarta date +'%H%M').txt"
-MKDTBOIMG="/workspace/jale/libufdt/utils/src/mkdtboimg.py"
-CLANG_DIR="/workspace/jale/clang"
-GCC64_DIR="/workspace/jale/gcc64/aarch64--glibc--stable-2024.02-1"
-GCC32_DIR="/workspace/jale/gcc32"
+MKDTBOIMG="/workspace/tools/libufdt/utils/src/mkdtboimg.py"
+CLANG_DIR="/workspace/tools/clang"
+GCC64_DIR="/workspace/tools/gcc64/aarch64--glibc--stable-2024.02-1"
+GCC32_DIR="/workspace/tools/gcc32"
 export CONFIG_FILE="vayu_defconfig"
 export ARCH="arm64"
-export KBUILD_BUILD_HOST="AnymoreProject"
-export KBUILD_BUILD_USER="t.me"
+export KBUILD_BUILD_HOST="Gaba"
+export KBUILD_BUILD_USER="git@"
 
 export PATH="$CLANG_DIR/bin:$GCC64_DIR/bin:$GCC32_DIR/bin:$PATH"
 
